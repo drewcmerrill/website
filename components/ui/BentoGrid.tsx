@@ -118,7 +118,7 @@ export const BentoGridItem = ({
             {description}
           </div>
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-white`}
           >
             {title}
           </div>
@@ -135,7 +135,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] text-white"
                   >
                     {item}
                   </span>
@@ -148,7 +148,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] text-white"
                   >
                     {item}
                   </span>
@@ -171,7 +171,7 @@ export const BentoGridItem = ({
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
+                otherClasses="dark:!bg-[#161A31]"
               />
             </div>
           )}
