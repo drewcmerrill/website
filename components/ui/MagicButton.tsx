@@ -17,28 +17,25 @@ const MagicButton = ({
   otherClasses,
 }: {
   title: string;
-  icon: React.ReactNode;
-  position: string;
+  icon?: React.ReactNode;
+  position?: string;
   handleClick?: () => void;
   otherClasses?: string;
 }) => {
   return (
     <div>
       <button
-        className="relative inline-flex rounded-full h-12 w-full md:w-60 md:mt-10 overflow-hidden  p-[2px] focus:outline-none"
+        className="inline-flex p-[3px] relative h-12 w-full md:w-60 md:mt-10 overflow-hidden"
         onClick={handleClick}
       >
-        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-
-        {/* remove px-3 py-1, add px-5 gap-2 */}
-        <span
-          className={`inline-flex h-full w-full rounded-full cursor-pointer items-center justify-center
-            bg-white dark:bg-slate-950 px-7 text-sm font-medium text-slate-950 dark:text-white backdrop-blur-3xl gap-2 ${otherClasses}`}
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple rounded-lg" />
+        <div
+          className={`inline-flex px-8 py-2 h-full w-full cursor-pointer items-center justify-center gap-2 text-sm font-medium bg-white dark:bg-[#161A31] rounded-[6px] relative group transition duration-200 dark:text-white hover:bg-transparent ${otherClasses}`}
         >
           {position === "left" && icon}
           {title}
           {position === "right" && icon}
-        </span>
+        </div>
       </button>
     </div>
   );

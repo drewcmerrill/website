@@ -39,7 +39,7 @@ const RecentProjects = () => {
                   {iconLists.map((icon, index) => (
                     <div
                       key={icon}
-                      className="border border-black/[0.4] dark:border-white/[0.4] rounded-full dark:bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-black/[0.4] dark:border-white/[0.4] rounded-full bg-white dark:bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{ transform: `translateX(-${5 * index * 2}px)` }}
                     >
                       <img src={icon} alt={icon} className="p-2" />
