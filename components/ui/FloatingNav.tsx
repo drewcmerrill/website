@@ -31,7 +31,7 @@ export const FloatingNav = ({
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.2) {
+      if (scrollYProgress.get() < 0.02) {
         setVisible(false);
       } else {
         if (direction < 0) {
@@ -71,7 +71,9 @@ export const FloatingNav = ({
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="sm:text-sm text-xs !cursor-pointer">
+              {navItem.name}
+            </span>
           </Link>
         ))}
         <ModeToggle />
