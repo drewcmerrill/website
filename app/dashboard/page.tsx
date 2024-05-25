@@ -1,7 +1,8 @@
+import { DatePicker } from "@/components/ui/DatePicker";
 import React from "react";
 
 const page = () => {
-  return <h2>page</h2>;
+  return <DatePicker />;
 };
 
 export default page;
