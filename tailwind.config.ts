@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      borderWidth: {
+        '1': '1px',
+      },
       colors: {
         black: {
           DEFAULT: "#000",

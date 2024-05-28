@@ -30,7 +30,7 @@ const MagicButton = ({
       >
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple rounded-lg" />
         <div
-          className={`inline-flex px-8 py-2 h-full w-full cursor-pointer items-center justify-center gap-2 text-sm font-medium bg-white dark:bg-[#161A31] rounded-[6px] relative group transition duration-200 dark:text-white hover:bg-transparent ${otherClasses}`}
+          className={`inline-flex px-8 py-2 h-full w-full cursor-pointer items-center justify-center gap-2 text-sm font-medium bg-white dark:bg-[#161A31] rounded-[6px] relative group transition duration-200 dark:text-white hover:bg-transparent dark:hover:bg-transparent ${otherClasses}`}
         >
           {position === "left" && icon}
           {title}

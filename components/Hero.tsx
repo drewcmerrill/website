@@ -4,20 +4,19 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FloatingNav } from "./ui/FloatingNav";
 import { ModeToggle } from "./ui/ModeToggle";
+import WordRotate from "./ui/word-rotate";
+import { flipWords } from "@/data";
 
 const Hero = () => {
+  const longestWord = Math.max(...flipWords.map((word) => word.length));
+  const maxWidth = `${longestWord - 1}ch`; // 'ch' unit for character width
+
   return (
     <div className="pb-20 pt-36">
       <div>
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
-          fill="purple"
-        />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight className="-top-16 -left-10  h-screen" fill="white" />
+        <Spotlight className="top-0 left-0 w-screen h-screen " fill="purple" />
+        <Spotlight className="top-10 left-0 w-screen h-screen " fill="blue" />
       </div>
 
       <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.06] flex items-center justify-center absolute top-0 left-0">
@@ -27,17 +26,25 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-black-100 dark:text-white max-w-80">
-            Dynamic Web Magic with Next.js
-          </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless User Experiences"
+            className="text-center text-[40px] md:text-5xl lg:text-5xl"
+            words="Hey there! My name is Drew"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Drew, a Next.js Developer based in Arizona
-          </p>
+          <div className="text-center tracking-wider mb-4 text-md sm:text-2xl md:text-3xl flex items-center font-semibold md:font-normal">
+            And I like&nbsp;
+            <div
+              className="flex justify-start border-b-1 md:border-b-2 border-black dark:border-white"
+              style={{
+                width: maxWidth,
+              }}
+            >
+              <WordRotate
+                words={flipWords}
+                // className="text-[#6366f1] dark:text-purple"
+              />
+            </div>
+          </div>
 
           <a href="/dashboard">
             <MagicButton

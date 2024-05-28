@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "My Resume",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -218,3 +218,21 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/drewcmerrill/"
   },
 ];
+
+let words = [ "volleyball", "pickleball", "hiking", "designing", "scubadiving", "charts", "graphs", "learning", "weightlifting", "Wordle", "Connections", "etymology", "rock climbing", "spikeball", "you ;)", "algorithms", "good design", "functionality", "piano", "musicals", "cooking", "sunshine", "audiobooks", "podcasts", "volunteering", "space", "birds", "spreadsheets", "reading",  "boardgames", "woodworking", "crosswords"]
+
+for (let i = words.length - 1; i > 0; i--) {
+  // Generate a random index between 0 and i
+  const j = Math.floor(Math.random() * (i + 1));
+  
+  // Swap elements at i and j
+  [words[i], words[j]] = [words[j], words[i]];
+}
+
+words.unshift("developing", "engineering")
+
+
+export const flipWords  = words
+
+
+
