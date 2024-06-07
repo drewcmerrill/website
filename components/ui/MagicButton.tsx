@@ -25,19 +25,38 @@ const MagicButton = ({
   return (
     <div>
       <button
-        className="inline-flex p-[3px] relative h-12 w-full md:w-60 md:mt-10 overflow-hidden"
+        className="inline-flex p-[3px] relative h-12 w-full md:w-60 md:mt-10"
         onClick={handleClick}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple rounded-lg" />
         <div
-          className={`inline-flex px-8 py-2 h-full w-full cursor-pointer items-center justify-center gap-2 text-sm font-medium bg-white dark:bg-[#161A31] rounded-[6px] relative group transition duration-200 dark:text-white hover:bg-transparent dark:hover:bg-transparent ${otherClasses}`}
+          className={` border-2 border-black dark:border-white border-dashed inline-flex px-8 py-2 h-full w-full cursor-pointer bg-white items-center justify-center gap-2 text-md font-medium  dark:bg-[#161A31]  relative  dark:text-white hover:bg-[#5AB0F1] dark:hover:bg-transparent ${otherClasses}`}
         >
           {position === "left" && icon}
           {title}
           {position === "right" && icon}
+          {/* <Icon className="absolute h-6 w-6 -top-[13px] -left-[13px] dark:text-white text-black" />
+          <Icon className="absolute h-6 w-6 -bottom-[13px] -left-[13px] dark:text-white text-black" />
+          <Icon className="absolute h-6 w-6 -top-[13px] -right-[13px] dark:text-white text-black" />
+          <Icon className="absolute h-6 w-6 -bottom-[13px] -right-[13px] dark:text-white text-black" /> */}
         </div>
       </button>
     </div>
+  );
+};
+
+export const Icon = ({ className, ...rest }: any) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className={className}
+      {...rest}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+    </svg>
   );
 };
 

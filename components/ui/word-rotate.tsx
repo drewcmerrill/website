@@ -3,6 +3,7 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, HTMLMotionProps, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import myIcon from "@/public/insta.svg";
 
 interface WordRotateProps {
   words: string[];
@@ -36,13 +37,14 @@ export default function WordRotate({
   return (
     <div className="overflow-hidden">
       <AnimatePresence mode="wait">
-        <motion.h1
+        <motion.div
           key={words[index]}
-          className={cn(className)}
+          className={cn(className, "flex gap-2 items-center")}
           {...framerProps}
         >
           {words[index]}
-        </motion.h1>
+          {/* <img src="./profile.svg" alt="./profile.svg" width={20} height={20} /> */}
+        </motion.div>
       </AnimatePresence>
     </div>
   );

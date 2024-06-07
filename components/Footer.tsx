@@ -5,16 +5,11 @@ import { socialMedia } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="w-full mb-[100px] pb-10 md:mb-5" id="contact">
+    <footer className="w-full mt-5 md:mt-20 pb-10" id="contact">
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:mx-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+        <h1 className=" text-bold text-3xl md:heading lg:mx-w-[45vw] mb-5 md:mb-0">
+          Reach out and say hi!
         </h1>
-        <p className="dark:text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals
-        </p>
         <a href="mailto:drewcmerrill@gmail.com">
           <MagicButton
             title="Let's get in touch"
