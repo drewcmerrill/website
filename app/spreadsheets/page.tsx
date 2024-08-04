@@ -21,14 +21,19 @@ const page = () => {
           </div>
         </div>
         <div className="w-full  flex flex-col lg:flex-row">
-          <div className="flex-1  p-7">
+          <div className="flex-1  p-7 mb-10 lg:mb-0">
             <img
               className="aspect-auto object-cover w-full max-h-[700px] shadow-xl border-2 md:border-[3px] border-black border-dashed"
               src="/Bookstack.webp"
               alt="Bookstack"
             />
           </div>
-          <div className="flex-1  p-7 flex-col flex ">
+          <div className="flex-1  p-7 flex-col flex relative">
+            <img
+              className="absolute h-44 sm:h-56 md:h-60 -top-12 md:-top-16 left-56 md:left-64"
+              src="/ClickMe.svg"
+              alt="ClickMe"
+            />
             <a
               href="https://docs.google.com/spreadsheets/d/1mp2_U62ixWZYZNB4-ayK6o2MwtrinNz9eijT3FN1KiE/edit?usp=sharing"
               target="_blank"
@@ -107,7 +112,7 @@ const page = () => {
             <ul className="text-2xl md:text-3xl list-disc pl-10">
               <li>Sunday: Read a non-fiction book</li>
               <li>Monday: Data Structures and Algorithms</li>
-              <li>Tusday: Math</li>
+              <li>Tuesday: Math</li>
               <li>Wednesday: Web Development</li>
               <li>Thursday: Music Theory</li>
               <li>Friday: Drawing</li>

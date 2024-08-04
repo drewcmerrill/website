@@ -3,7 +3,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const About = () => {
   return (
-    <div id="about" className=" w-full flex-col">
+    <section id="about" className=" w-full flex-col">
       <div className="w-full flex flex-col items-center mt-32 mb-10">
         <TextGenerateEffect
           className="text-center text-[40px] md:text-5xl lg:text-5xl"
@@ -52,7 +52,7 @@ const About = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

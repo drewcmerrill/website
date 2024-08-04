@@ -1,3 +1,4 @@
+import { withNextVideo } from "next-video/process";
 import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,7 +9,7 @@ const nextConfig = {
   trailingSlash: true,
 };
 
-export default withSentryConfig(nextConfig, {
+export default withNextVideo(withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -41,4 +42,4 @@ export default withSentryConfig(nextConfig, {
   // https://docs.sentry.io/product/crons/
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true,
-});
+}));

@@ -47,33 +47,14 @@ export const BentoGridItem = ({
   spareImg?: string;
   link: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
-
-  const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const handleCopy = () => {
-    const text = "drewcmerrill@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
   return (
     <div
       className={cn(
-        "row-span-1 relative border-2 md:border-[3px]  border-black border-dashed mb-10 cursor-pointer group/bento shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative  mb-10 cursor-pointer group/bento shadow-xl shadow-input dark:shadow-none justify-between flex flex-col space-y-4 ",
         className
       )}
     >
-      <div className="w-full h-full absolute">
+      <div className="w-full h-full absolute transition-transform duration-200 ease-in-out transform hover:scale-[102%] border-2 md:border-[3px]  border-black border-dashed">
         {img && (
           <Link key={`link=${id}`} href={link}>
             <img

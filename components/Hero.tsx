@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
 
           <a
-            href="https://drive.google.com/file/d/13K7De9k_YftxfIt53-BeQlauhNaorLzS/view"
+            href="https://drive.google.com/file/d/1qRQVWZjncoZawkejhXLXsApps6FDWU9d/view?usp=sharing"
             target="_blank"
           >
             <MagicButton title="My Resume" icon={<FaFile />} position="right" />

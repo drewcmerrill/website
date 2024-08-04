@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        'bottom': '0px 10px 2px 0px rgba(0, 0, 0, .3), 0px 10px 2px 0px rgba(0, 0, 0, .1)',
+      },
       borderWidth: {
         '1': '1px',
       },
@@ -163,6 +166,11 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+    },
+  },
+  variants: {
+    extend: {
+      zIndex: ['hover'],  // Enable hover variant for zIndex
     },
   },
   plugins: [

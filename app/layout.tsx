@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const font = Inter({ weight: "200", subsets: ["latin"] });
+const font = Inter_Tight({ weight: "200", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Drew Merrill",
   description: "Drew Merrill's personal website",
+  
 };
 
 export default function RootLayout({
