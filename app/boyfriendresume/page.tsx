@@ -38,7 +38,7 @@ const page = () => {
             </a>
             <p className="text-2xl md:text-3xl mb-5">
               First off, I can design websites. I&apos;ll admit it, that&apos;s
-              cool as hell.
+              cool af.
             </p>
 
             <p className="text-2xl md:text-3xl mb-5">

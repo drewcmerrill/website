@@ -125,6 +125,26 @@ export const books = [
     heightMultiplier: 1,
   },
   {
+    title: "The Far Side Gallery",
+    img: "/The_Far_Side_Gallery.webp",
+    heightMultiplier: 1.13,
+  },
+  {
+    title: "The Iliad",
+    img: "/The_Iliad.webp",
+    heightMultiplier: .88,
+  },
+  {
+    title: "The Odyssey",
+    img: "/The_Odyssey.webp",
+    heightMultiplier: .88,
+  },
+  {
+    title: "Moby Dick",
+    img: "/Moby_Dick.webp",
+    heightMultiplier: .72,
+  },
+  {
     title: "The Lord of the Rings",
     img: "/The_Lord_Of_The_Rings.webp",
     heightMultiplier: .86,
@@ -288,7 +308,88 @@ export const books = [
     title: "This Is How You Lose the Time War",
     img: "/This_Is_How_You_Lose_The_Time_War.webp",
     heightMultiplier: .87
-  }
+  },
+  {
+    title: "I Cheerfully Refuse",
+    img: "/I_Cheerfully_Refuse.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "The Three Body Problem",
+    img: "/The_Three_Body_Problem.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "The Dark Forest",
+    img: "/The_Dark_Forest.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "Death's End",
+    img: "/Death's_End.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "A Most Remarkable Creature",
+    img: "/A_Most_Remarkable_Creature.webp",
+    heightMultiplier: 1
+  },
+  {
+    title: "Sapiens",
+    img: "/Sapiens.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "A Brief History of Time",
+    img: "/A_Brief_History_Of_Time.webp",
+    heightMultiplier: .95
+  },
+  {
+    title: "The Wise Man's Fear",
+    img: "/The_Wise_Man's_Fear.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "A Deepness in the Sky",
+    img: "/A_Deepness_In_The_Sky.webp",
+    heightMultiplier: .71
+  },
+  {
+    title: "The Ballad of Songbirds and Snakes",
+    img: "/The_Ballad_Of_Songbirds_And_Snakes.webp",
+    heightMultiplier: .89
+  },
+  {
+    title: "Calvin and Hobbes Book One",
+    img: "/Calvin_And_Hobbes_1.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "Calvin and Hobbes Book Two",
+    img: "/Calvin_And_Hobbes_2.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "Calvin and Hobbes Book Three",
+    img: "/Calvin_And_Hobbes_3.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "Calvin and Hobbes Book Four",
+    img: "/Calvin_And_Hobbes_4.webp",
+    heightMultiplier: .97
+  },
+  {
+    title: "Jane Eyre",
+    img: "/Jane_Eyre.webp",
+    heightMultiplier: .70
+  },
+  {
+    title: "Assassin's Apprentice",
+    img: "/Assassin's_Apprentice.webp",
+    heightMultiplier: .99
+  },
+
 ]
 
 export const BoyfriendPhotos = [
